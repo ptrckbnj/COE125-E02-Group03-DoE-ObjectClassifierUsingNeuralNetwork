@@ -72,8 +72,7 @@ class Ui_regForm(object):
             self.lnameLine.clear()
             val = registerAcc(self,acc)
             
-
-    def retranslateUi(self, regForm):
+def retranslateUi(self, regForm):
         _translate = QtCore.QCoreApplication.translate
         regForm.setWindowTitle(_translate("regForm", "Registration"))
         self.registerButton.setText(_translate("regForm", "Register"))
@@ -82,6 +81,12 @@ class Ui_regForm(object):
         self.passwordLabel.setText(_translate("regForm", "Password:"))
         self.fnameLabel.setText(_translate("regForm", "First Name:"))
         self.lnameLabel.setText(_translate("regForm", "Last Name:"))
+
+   
+
+
+
+
 
 
 if __name__ == "__main__":
