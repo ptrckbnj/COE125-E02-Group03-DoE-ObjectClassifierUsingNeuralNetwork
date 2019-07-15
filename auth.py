@@ -27,33 +27,36 @@ def loginProcess(self,acc):
             mess.setWindowTitle("Input error")
             mess.setStandardButtons(QMessageBox.Ok)
             mess.exec()
+        
         else:
-            connection = sq.connect("acc.db")
-            con = connection.cursor()
-            con.execute("SELECT accountid,fname,lname FROM accounts WHERE username = ? and password = ?",(user.username,user.password))
-            userdata = con.fetchone()
-            connection.close()
-            if userdata is None:
-                 mess = QMessageBox()
-                 mess.setIcon(QMessageBox.Critical)
-                 mess.setText("You failed to login! Wrong Username/Password")
-                 mess.setWindowTitle("Error")
-                 mess.setStandardButtons(QMessageBox.Ok)
-                 mess.exec()
-               
-            else:
-                user.setUsername(acc.username)
-                user.setPassword(acc.password)
-                user.setid(userdata[0])
-                user.setfName(userdata[1])
-                user.setlName(userdata[2])
-            
-                mess = QMessageBox()
-                mess.setIcon(QMessageBox.Information)
-                mess.setText("Hello " + user.fname +" "+ user.lname + "! You have successfully logged in.")
-                mess.setWindowTitle("Successful Login")
-                mess.setStandardButtons(QMessageBox.Ok)
-                mess.exec()
+	            connection = sq.connect("acc.db")
+	            con = connection.cursor()
+	            con.execute("SELECT accountid,fname,lname FROM accounts WHERE username = ? and password = ?",(user.username,user.password))
+	            userdata = con.fetchone()
+	            connection.close()
+	            if userdata is None:
+	                 mess = QMessageBox()
+	                 mess.setIcon(QMessageBox.Critical)
+	                 mess.setText("You failed to login! Wrong Username/Password")
+	                 mess.setWindowTitle("Error")
+	                 mess.setStandardButtons(QMessageBox.Ok)
+	                 mess.exec()
+	               
+	            else:
+	                user.setUsername(acc.username)
+	                user.setPassword(acc.password)
+	                user.setid(userdata[0])
+	                user.setfName(userdata[1])
+	                user.setlName(userdata[2])
+	            
+	                mess = QMessageBox()
+	                mess.setIcon(QMessageBox.Information)
+	                mess.setText("Hello " + user.fname +" "+ user.lname + "! You have successfully logged in.")
+	                mess.setWindowTitle("Successful Login")
+	                mess.setStandardButtons(QMessageBox.Ok)
+	                mess.exec()
+
+        
                 
 def registerAcc(self,acc):
     connection = sq.connect("acc.db")
