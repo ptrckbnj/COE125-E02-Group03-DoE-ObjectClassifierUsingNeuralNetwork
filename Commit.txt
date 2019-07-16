@@ -1,0 +1,3 @@
+I, Maria Trinidad Ursula R. Sanchez, commit to do the following for our group's project. 
+These are the business logic and the data access layer 
+that would be committed on July 22, 2019 on Github.
