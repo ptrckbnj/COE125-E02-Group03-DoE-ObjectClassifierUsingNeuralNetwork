@@ -61,3 +61,47 @@ Install a anaconda prompt then check the version using
 > python –version 
 
 In our python version could be Python 3.5.6 :: Anaconda 4.2.0 (64-bit) 
+
+## headings
+Step 1:
+### headings
+
+Install CUDA and CUDNN. Cude is a parallel computing platform and programming model developed by Nvidia for general computing on its own GPUs (graphics processing units). CUDA enables developers to speed up compute-intensive applications by harnessing the power of GPUs for the parallelizable part of the computation.
+
+
+Step 2: 
+
+Download the package of Tensorflow using the command prompt or directly download the package from the site using these commands
+C:\>pip3 install -U pip virtualenv
+C:\>pip3 install --user --upgrade tensorflow  
+
+then after installing, check the version of your packages.
+C:\>python3 --version
+C:\>pip3 --version
+C:\>virtualenv --version
+
+Activate the environment
+C:\> activate tensorflow1
+
+(tensorflow) C:\>python -m pip install --upgrade pip
+
+Step 3: 
+
+Download the following packages in your command prompt windows or ubuntu.
+
+(tensorflow) C:\> conda install -c anaconda protobuf
+(tensorflow) C:\> pip install pillow
+(tensorflow) C:\> pip install lxml
+(tensorflow) C:\> pip install Cython
+(tensorflow) C:\> pip install contextlib2
+(tensorflow) C:\> pip install jupyter
+(tensorflow) C:\> pip install matplotlib
+(tensorflow) C:\> pip install pandas
+(tensorflow) C:\> pip install opencv-python
+
+Pandas and opencv-python are used for the feed of the webcam real-time.
+
+Step 4:
+
+After downloading the packages, follow these instruction for setting up the path for the tensorflow.
+
