@@ -81,15 +81,15 @@ Activate the environment
 
 Download the following packages in your command prompt windows or ubuntu.
 
-(tensorflow) C:\> conda install -c anaconda protobuf
-(tensorflow) C:\> pip install pillow
-(tensorflow) C:\> pip install lxml
-(tensorflow) C:\> pip install Cython
-(tensorflow) C:\> pip install contextlib2
-(tensorflow) C:\> pip install jupyter
-(tensorflow) C:\> pip install matplotlib
-(tensorflow) C:\> pip install pandas
-(tensorflow) C:\> pip install opencv-python
+> conda install -c anaconda protobuf
+> pip install pillow
+> pip install lxml
+> pip install Cython
+> pip install contextlib2
+> pip install jupyter
+> pip install matplotlib
+> pip install pandas
+> pip install opencv-python
 
 Pandas and opencv-python are used for the feed of the webcam real-time.
 
