@@ -60,6 +60,16 @@ Install a anaconda prompt then check the version using
 
 Install CUDA and CUDNN. Cude is a parallel computing platform and programming model developed by Nvidia for general computing on its own GPUs (graphics processing units). CUDA enables developers to speed up compute-intensive applications by harnessing the power of GPUs for the parallelizable part of the computation.
 
+### CUDA
+
+![GetImage (3)](https://user-images.githubusercontent.com/50915438/61794995-06243480-ae55-11e9-92df-e6288a46f727.jpg)
+
+### CUDNN
+
+![GetImage (4)](https://user-images.githubusercontent.com/50915438/61794994-06243480-ae55-11e9-8776-baab4643a206.jpg)
+
+
+
 
 ### Step 2: 
 
@@ -82,18 +92,51 @@ Activate the environment
 Download the following packages in your command prompt windows or ubuntu.
 
 > conda install -c anaconda protobuf
+
 > pip install pillow
+
 > pip install lxml
+
 > pip install Cython
+
 > pip install contextlib2
+
 > pip install jupyter
+
 > pip install matplotlib
+
 > pip install pandas
+
 > pip install opencv-python
+
 
 Pandas and opencv-python are used for the feed of the webcam real-time.
 
 ### Step 4:
 
-After downloading the packages, follow these instruction for setting up the path for the tensorflow.
+After downloading the packages, follow these instruction for setting up the path for the tensorflow. 
 
+![GetImage](https://user-images.githubusercontent.com/50915438/61794912-d117e200-ae54-11e9-9907-0ff73ede1e9d.jpg)
+
+
+CLICK THE ENVIRONMENT VARIABLES
+
+![GetImage (1)](https://user-images.githubusercontent.com/50915438/61794997-06bccb00-ae55-11e9-9b23-67e2a04b0cd0.jpg)
+
+
+Then, go to pythonpath 
+
+![GetImage (2)](https://user-images.githubusercontent.com/50915438/61794996-06bccb00-ae55-11e9-93e7-51191b0fe56f.jpg)
+
+Follow the format
+
+![GetImage (5)](https://user-images.githubusercontent.com/50915438/61795134-4b486680-ae55-11e9-9208-c9c6752cf1c9.jpg)
+
+
+
+### Step 5 
+
+After setting up the requirements, type in the directory
+
+>python setup.py build 
+>python setup.py install
