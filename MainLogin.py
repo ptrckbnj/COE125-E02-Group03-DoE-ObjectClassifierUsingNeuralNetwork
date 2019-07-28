@@ -42,8 +42,7 @@ class loginUi(QtWidgets.QMainWindow):
         logacc.setPassword(self.passwordLine.text())
         value = loginProcess(self,logacc)
         if value is True: 
-            self.selui = selectUi()
-            self.selui.show()
+            os.system('python objectdetectionimagewebcam.py')
             self.close()
         
         else:
@@ -117,21 +116,6 @@ class registerUi(QtWidgets.QWidget):
                 mess.setStandardButtons(QMessageBox.Ok)
                 mess.exec()    
             
-class selectUi(QtWidgets.QWidget):
-    def __init__(self):
-        super(selectUi,self).__init__()
-        uic.loadUi('selectGui.ui',self)
-        self.learnBut = self.findChild(QtWidgets.QPushButton,"learningButton")
-        self.netBut = self.findChild(QtWidgets.QPushButton,"networkButton")
-        
-        self.learnBut.clicked.connect(self.learning)
-        self.netBut.clicked.connect(self.network)
-        
-        self.show()
-    def learning(self):
-        os.system('python objectdetectionimage.py')
-    def network(self):
-        os.system('python objectdetectionimagewebcam.py')
 
 
 if __name__ == '__main__':
