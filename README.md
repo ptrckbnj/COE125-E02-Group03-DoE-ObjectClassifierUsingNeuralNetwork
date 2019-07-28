@@ -91,6 +91,7 @@ Activate the environment
 
 Download the following packages in your command prompt windows or ubuntu.
 
+```
 > conda install -c anaconda protobuf
 
 > pip install pillow
@@ -108,7 +109,7 @@ Download the following packages in your command prompt windows or ubuntu.
 > pip install pandas
 
 > pip install opencv-python
-
+```
 
 Pandas and opencv-python are used for the feed of the webcam real-time.
 
@@ -130,6 +131,8 @@ Then, go to pythonpath
 
 Follow the format
 
+![GetImage (5)](https://user-images.githubusercontent.com/50915438/61795134-4b486680-ae55-11e9-9208-c9c6752cf1c9.jpg)
+
 
 ### Step 5
 
@@ -137,18 +140,10 @@ Download or clone the file then type the following command to the windows termin
 
 ```
 $ python --version
+
+
 $ python MainLogin.py
 ```
 
 Make sure to register and you have your own account to login for object real time classifier
 
-![GetImage (5)](https://user-images.githubusercontent.com/50915438/61795134-4b486680-ae55-11e9-9208-c9c6752cf1c9.jpg)
-
-
-
-### Step 5 
-
-After setting up the requirements, type in the directory
-
->python setup.py build 
->python setup.py install
