@@ -130,6 +130,18 @@ Then, go to pythonpath
 
 Follow the format
 
+
+### Step 5
+
+Download or clone the file then type the following command to the windows terminal
+
+```
+$ python --version
+$ python MainLogin.py
+```
+
+Make sure to register and you have your own account to login for object real time classifier
+
 ![GetImage (5)](https://user-images.githubusercontent.com/50915438/61795134-4b486680-ae55-11e9-9208-c9c6752cf1c9.jpg)
 
 
