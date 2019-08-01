@@ -153,6 +153,10 @@ Login interface:
 
 ![image](https://user-images.githubusercontent.com/50915438/62009777-67ba0b00-b195-11e9-8487-a2c880be55b8.png)
 
+## For sample logging in:
+## Username : ptrckbnj
+## Password : patpat
+
 Webcam Interface: 
 
 ![image](https://user-images.githubusercontent.com/50915438/62009852-29711b80-b196-11e9-86c5-2c2858c7716c.png)
